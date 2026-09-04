@@ -25,4 +25,8 @@ cout << "soal 2" << endl;
     double hasil = (nilai_UTS * 0.3) + (nilai_UAS * 0.4) + (nilai_tugas * 0.3);
     cout << hasil << endl;
 
+cout << endl;
+
+cout << "soal 3" << endl;
+
 }       
