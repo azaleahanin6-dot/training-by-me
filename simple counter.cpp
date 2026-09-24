@@ -21,10 +21,10 @@ int main(){
         cout << "congratulation! you get 10% discount." << endl;
         discount = (total_price * 0.1);
         final_price = (total_price - discount);
-        cout << "price that you must pay: " << final_price << endl;
+        cout << "the price to pay: " << final_price << endl;
     } else {
         final_price = (total_price);
-        cout << "price that you must pay: " << final_price << endl;
+        cout << "the price to pay: " << final_price << endl;
     }
 
  return 0;
