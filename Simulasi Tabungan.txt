@@ -1,0 +1,24 @@
+Start
+    target -> input
+    
+    saldo -> 0
+    bulan -> 1
+    
+    While bulan <= 24
+        setoran -> input
+        
+        saldo -> saldo + setoran
+        Print saldo
+        
+        If saldo >= target
+            Break
+            
+        bulan -> bulan + 1
+    End While
+    
+    If saldo >= target
+        Print bulan
+        Print saldo
+    Else
+        Print saldo
+End
