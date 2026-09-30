@@ -1,0 +1,102 @@
+ NOTASI PSEUDOCODE
+
+// TUGAS 1: Menghitung Nilai Akhir & Nilai Huruf
+// ===============================================
+ALGORITMA MenentukanNilaiAkhirdanNilaiHurufMahasiswa
+// Menghitung nilai akhir berdasarkan pembobotan dan menentukan nilai huruf skala UNNES
+// Input: nilaiTugas, nilaiKuis, nilaiUTS, nilaiUAS, nilaiProjek
+// Output: nilaiAkhir, nilaiHuruf
+
+DICTIONARY
+    nilaiTugas, nilaiKuis, nilaiUTS, nilaiUAS, nilaiProjek, nilaiAkhir : float;
+    nilaiHuruf : string;
+
+ALGORITHM
+    input(nilaiTugas, nilaiKuis, nilaiUTS, nilaiUAS, nilaiProjek)
+
+    nilaiAkhir ((nilaiTugas * 0.15) + (nilaiKuis * 0.10) + (nilaiUTS * 0.25) + (nilaiUAS * 0.25) + (nilaiProjek * 0.25))
+
+    if nilaiAkhir >= 86 then
+        nilaiHuruf <- "A"
+    else if nilaiAkhir >= 81 then
+        nilaiHuruf <- "AB"
+    else if nilaiAkhir >= 71 then
+        nilaiHuruf <- "B"
+    else if nilaiAkhir >= 66 then
+        nilaiHuruf <- "BC"
+    else if nilaiAkhir >= 61 then
+        nilaiHuruf <- "C"
+    else if nilaiAkhir >= 56 then
+        nilaiHuruf <- "CD"
+    else if nilaiAkhir >= 51 then
+        nilaiHuruf <- "D"
+    else if nilaiAkhir < 51 then
+        nilaiHuruf <- "E"
+    end if
+
+    output(nilaiAkhir, nilaiHuruf)
+
+
+// TUGAS 2: Menghitung Tarif Parkir
+// ===============================================
+ALGORITMA HitungTarifParkir
+// Menghitung tarif parkir berdasarkan durasi parkir
+// Input: lamaParkir
+// Output: totalTarif
+
+DICTIONARY
+    lamaParkir : float;
+    totalTarif : integer;
+
+ALGORITHM
+    input(lamaParkir)
+
+    lamaParkir <- ceil(lamaParkirInput)
+
+    if lamaParkir <= 2 then
+        totalTarif <- 5000
+    else if lamaParkir <= 8 then
+        totalTarif <- 5000 + ((lamaParkir - 2) * 3000)
+    else
+        totalTarif <- 25000
+    end if
+
+    output(totalTarif)
+
+// TUGAS 3: Menghitung Tarif Pengiriman
+// ===============================================
+ALGORITMA HitungTarifPengiriman
+// Menghitung total biaya pengiriman berdasarkan berat paket dan jarak
+// Input: berat, jarak
+// Output: totalBiaya
+
+DICTIONARY
+    berat, jarak : float;
+    tarifDasar, tambahanBiaya, totalBiaya : integer;
+
+ALGORITHM
+    input(berat, jarak)
+
+    if berat <= 2 then
+        tarifDasar <- 10000
+    else if berat <= 5 then
+        tarifDasar <- 20000
+    else if berat <= 10 then
+        tarifDasar <- 35000
+    else
+        tarifDasar <- 50000
+    end if
+
+    if jarak <= 7 then
+        tambahanBiaya <- 0
+    else if jarak <= 30 then
+        tambahanBiaya <- 10000
+    else if jarak <= 50 then
+        tambahanBiaya <- 20000
+    else
+        tambahanBiaya <- 35000
+    end if
+
+    totalBiaya <- tarifDasar + tambahanBiaya
+    output(totalBiaya)
+
