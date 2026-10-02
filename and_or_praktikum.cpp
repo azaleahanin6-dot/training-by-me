@@ -5,6 +5,7 @@ using namespace std;
     int umur;
     char statusSehat; // 'Y' atau 'T'
     
+    cout << "Cek kelayakan pembuatan SIM\n";
     cout << "Masukkan Umur Anda: ";
     cin >> umur;
     cout << "Apakah Anda sehat secara fisik & mental? (Y/T): ";

@@ -12,14 +12,11 @@ using namespace std;
     cout << "Password: ";
     cin >> password;
     // Nested If (If di dalam If)
-    if (username == "admin") {
-    if (password == "admin123") {
-    cout << "Login BERHASIL! Selamat datang, Admin." << endl;
-    } else {
-    cout << "Login GAGAL: Password salah!" << endl;
-    }
-    } else {
-    cout << "Login GAGAL: Username tidak ditemukan!" << endl;
-    }
+        if (username == "admin" && password == "admin123" ) {
+            cout << "Login BERHASIL! Selamat datang, Admin." << endl;
+        } else {
+            cout << "Login GAGAL: Username atau Password salah!" << endl;
+        }
+    
     return 0;
     }

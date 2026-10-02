@@ -5,7 +5,7 @@ int main() {
     double target, setoran;
     double saldo = 0;
     int bulan = 1;
-
+    cout << "TABUNGAN\n";
     cout << "Masukkan target tabungan: ";
     cin >> target;
 
