@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    cout << "=== Menghitung Omset Pendapatan Restoran ===" << endl;
     int N;
     double total_omset = 0;
 
